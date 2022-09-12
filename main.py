@@ -1,5 +1,9 @@
 from time import time, localtime
 import cityinfo
+import os,sys 
+parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
+sys.path.insert(0,parentdir)  
+from config import opt
 import config
 from requests import get, post
 from datetime import datetime, date
